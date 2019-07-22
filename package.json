@@ -1,0 +1,9 @@
+{
+  "name": "common-function",
+  "version": "1.0.0",
+  "description": "Common function.",
+  "main": "index.js",
+  "repository": "https://github.com/AlfieriChou/common-function",
+  "author": "AlfieriChou <alfierichou@gmail.com>",
+  "license": "MIT"
+}
