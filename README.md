@@ -1,0 +1,2 @@
+# common-function
+Common function.
