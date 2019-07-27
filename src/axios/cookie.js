@@ -17,6 +17,8 @@ const getCookie = async (method, url, data) => {
     },
   }).then(res => {
     cookies = res.headers["set-cookie"]
+  }).catch(err => {
+    throw err
   })
   return cookies
 }
