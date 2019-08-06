@@ -10,7 +10,7 @@ const fileHash = (filepath, algorithm = 'md5') => {
         shasum.update(data)
       })
       s.on('end', () => {
-        const hash = shasum.digset('hex')
+        const hash = shasum.digest('hex')
         resolve(hash)
       })
     } catch (err) {
