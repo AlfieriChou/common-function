@@ -2,6 +2,9 @@
   "name": "common-function",
   "version": "1.0.0",
   "description": "Common function.",
+  "scripts": {
+    "test": "jest --config ./jest.config.js --coverage --detectOpenHandles --forceExit"
+  },
   "main": "index.js",
   "repository": "https://github.com/AlfieriChou/common-function",
   "author": "AlfieriChou <alfierichou@gmail.com>",
@@ -9,5 +12,9 @@
   "dependencies": {
     "axios": "^0.19.0",
     "ioredis": "^4.14.0"
+  },
+  "devDependencies": {
+    "jest": "^24.8.0",
+    "jest-extended": "^0.11.2"
   }
 }
