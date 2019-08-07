@@ -10,7 +10,9 @@
   "author": "AlfieriChou <alfierichou@gmail.com>",
   "license": "MIT",
   "dependencies": {
+    "@ffmpeg-installer/ffmpeg": "^1.0.19",
     "axios": "^0.19.0",
+    "fluent-ffmpeg": "^2.1.2",
     "ioredis": "^4.14.0"
   },
   "devDependencies": {

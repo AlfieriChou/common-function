@@ -1,1 +1,4 @@
 src/observer-pattern
+__tests__
+jest.config.js
+node_modules
