@@ -6,7 +6,9 @@ class CommonRedis {
   }
   async incr(key, expire) {
     if (expire) {
-      const result = await this.redis.multi().incr(key)
+      const result = await this.redis
+        .multi()
+        .incr(key)
         .expire(key, expire)
         .exec()
       return result[0][1]

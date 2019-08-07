@@ -1,4 +1,4 @@
-class ObserverList{
+class ObserverList {
   constructor() {
     this.observerList = []
   }
@@ -6,13 +6,13 @@ class ObserverList{
     return this.observerList.push(obj)
   }
   empty() {
-    return this.observerList = []
+    return (this.observerList = [])
   }
   count() {
     return this.observerList.length
   }
   get(index) {
-    if (index > -1 && index < this.count() -1) {
+    if (index > -1 && index < this.count() - 1) {
       return this.observerList[index]
     }
   }
@@ -31,7 +31,7 @@ class ObserverList{
   indexOf(obj, startIndex) {
     let i = startIndex
     let pointer = -1
-    while(i < this.count()) {
+    while (i < this.count()) {
       if (this.observerList[i] === obj) pointer = i
       i++
     }

@@ -1,7 +1,7 @@
 const { encrypted, decrypted } = require('../../src/crypto')
 
 describe('base64 test!!!', () => {
-  it('base64 encode and decode!!', (done) => {
+  it('base64 encode and decode!!', done => {
     const data = {
       test: 'test'
     }

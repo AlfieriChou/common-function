@@ -1,6 +1,6 @@
 const axios = require('axios')
 /**
- * 
+ *
  * @param {string} method post
  * @param {string} url url
  * @param {form} formData const form = new FormData() form.set('username', 'alfieri') form.append('image', imageFile)
@@ -14,11 +14,13 @@ const sendFormData = async (method, url, formData) => {
     config: {
       headers: { 'Content-Type': 'multipart/form-data' }
     }
-  }).then(res => {
-    result = res.data
-  }).catch(err => {
-    throw err
   })
+    .then(res => {
+      result = res.data
+    })
+    .catch(err => {
+      throw err
+    })
   return result
 }
 

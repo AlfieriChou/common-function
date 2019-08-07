@@ -12,14 +12,16 @@ const getCookie = async (method, url, data) => {
   await axios({
     ...params,
     maxRedirects: 0,
-    validateStatus: (status) => {
+    validateStatus: status => {
       return status >= 200 && status < 303
-    },
-  }).then(res => {
-    cookies = res.headers["set-cookie"]
-  }).catch(err => {
-    throw err
+    }
   })
+    .then(res => {
+      cookies = res.headers['set-cookie']
+    })
+    .catch(err => {
+      throw err
+    })
   return cookies
 }
 

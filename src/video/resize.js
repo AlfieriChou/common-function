@@ -1,13 +1,13 @@
 const ffmpeg = require('./ffmpeg')
 
 /**
- * 
+ *
  * inputPath {string} 视频传入地址
  * outputPath {string} 视频输出地址
  * format {string} 输出视频格式
  * size {string} 视频码率
  *  */
-const resize = (opts) => {
+const resize = opts => {
   return new Promise((resolve, reject) => {
     const { inputPath, outputPath, format, size } = opts
     if (!inputPath) reject(new Error('please add video inputPath!!'))
@@ -18,7 +18,7 @@ const resize = (opts) => {
       .videoCodec('libx264')
       .format(format)
       .size(size)
-      .on('error', (err) => {
+      .on('error', err => {
         reject(err)
       })
       .on('end', () => {
