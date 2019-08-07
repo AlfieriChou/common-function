@@ -3,7 +3,13 @@
   "version": "1.0.0",
   "description": "Common function.",
   "scripts": {
+    "format": "prettier --write \"**/*.{ts,js}\"",
     "test": "jest --config ./jest.config.js --coverage --detectOpenHandles --forceExit"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "pretty-quick --staged"
+    }
   },
   "main": "index.js",
   "repository": "https://github.com/AlfieriChou/common-function",
@@ -16,7 +22,10 @@
     "ioredis": "^4.14.0"
   },
   "devDependencies": {
+    "husky": "^3.0.2",
     "jest": "^24.8.0",
-    "jest-extended": "^0.11.2"
+    "jest-extended": "^0.11.2",
+    "prettier": "^1.18.2",
+    "pretty-quick": "^1.11.1"
   }
 }

@@ -14,7 +14,7 @@ const fileHash = (filepath, algorithm = 'md5') => {
         resolve(hash)
       })
     } catch (err) {
-      reject('calc fail!')
+      reject(err)
     }
   })
 }
