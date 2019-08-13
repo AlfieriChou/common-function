@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "Common function.",
   "scripts": {
-    "format": "prettier --write \"**/*.{ts,js}\"",
+    "format": "prettier --write \"**/*.{ts,js,json}\"",
     "test": "jest --config ./jest.config.js --coverage --detectOpenHandles --forceExit"
   },
   "husky": {
@@ -21,6 +21,7 @@
     "axios": "^0.19.0",
     "fluent-ffmpeg": "^2.1.2",
     "ioredis": "^4.14.0",
+    "lodash": "^4.17.15",
     "node-ffprobe": "https://github.com/ListenerApproved/node-ffprobe.git#master"
   },
   "devDependencies": {
