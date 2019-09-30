@@ -30,7 +30,8 @@
     "fluent-ffmpeg": "^2.1.2",
     "ioredis": "^4.14.0",
     "lodash": "^4.17.15",
-    "node-ffprobe": "https://github.com/ListenerApproved/node-ffprobe.git#master"
+    "node-ffprobe": "https://github.com/ListenerApproved/node-ffprobe.git#master",
+    "superagent": "^5.1.0"
   },
   "devDependencies": {
     "@commitlint/cli": "^8.1.0",
